@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <p>Clean ups</p>
+      <p className="font-primary font-bold text-3xl">Clean ups</p>
     </section>
   );
 }
