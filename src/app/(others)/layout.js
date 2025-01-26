@@ -1,6 +1,7 @@
 import { poppins, source_sans } from "@/utils/fonts";
-import "../globals.css";
+import "@/app/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/shared/header";
 
 export const metadata = {
   title: "OneXReferral - One Referral Can Change Everything",
@@ -10,14 +11,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` antialiased ${poppins} ${source_sans}`}>
+      <body className={`antialiased ${poppins} ${source_sans}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+          <main className="h-screen">{children}</main>
         </ThemeProvider>
       </body>
     </html>
