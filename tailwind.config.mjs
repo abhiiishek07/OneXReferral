@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,10 +9,95 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        primary: ["var(--font-poppins)"],
+        secondary: ["var(--font-source-sans)"],
+      },
+      spacing: {
+        0: "0vh",
+        1: "0.4vh",
+        2: "0.8vh",
+        2.5: "1vh",
+        3: "1.3vh",
+        4: "1.7vh",
+        5: "2.1vh",
+        6: "2.6vh",
+        8: "3.3vh",
+        10: "4.3vh",
+        12: "5.1vh",
+        14: "6.0vh",
+        16: "6.8vh",
+        20: "8.6vh",
+        22: "9vh",
+        24: "9.5vh",
+        26: "10vh",
+        28: "13vh",
+        40: "16vh",
+        custom: "0.2vh",
+      },
+      fontSize: {
+        "8xl": "7.1vh",
+        "7xl": "6.2vh",
+        "6xl": "5.3vh",
+        "5xl": "4.5vh",
+        "4xl": "3.5vh",
+        "3xl": "3.0vh",
+        "2xl": "2.6vh",
+        xl: "2.2vh",
+        lg: "1.9vh",
+        md: "1.8vh",
+        base: "1.6vh",
+        sm: "1.5vh",
+        xs: "1.4vh",
+        xxs: "1.35vh",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
