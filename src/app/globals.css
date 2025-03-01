@@ -60,5 +60,29 @@
   }
 }
 
+/* CONTAINER */
+.container {
+  max-width: 185vh !important;
+  padding: 0 2vh;
+  margin: auto;
+}
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar__content::-webkit-scrollbar {
+  display: none;
+}
 

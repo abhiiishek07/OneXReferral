@@ -5,10 +5,12 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/screens/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
+        greyText: "#777777",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -96,6 +98,23 @@ export default {
         sm: "1.5vh",
         xs: "1.4vh",
         xxs: "1.35vh",
+      },
+      fontSize: {
+        "9xl": "8.0vh",
+        "8xl": "7.1vh",
+        "7xl": "6.2vh",
+        "6xl": "5.3vh",
+        "5xl": "4.5vh",
+        "4xl": "3.8vh",
+        "3xl": "3.2vh",
+        "2.5xl": "2.9vh",
+        "2xl": "2.6vh",
+        xl: "2.1vh",
+        lg: "1.9vh",
+        md: "1.7vh",
+        base: "1.5vh",
+        sm: "1.4vh",
+        xs: "1.3vh",
       },
     },
   },

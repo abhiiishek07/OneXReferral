@@ -1,7 +1,7 @@
 import { poppins, source_sans } from "@/utils/fonts";
 import "@/app/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Header from "@/components/shared/header";
+import Header from "@/components/layout/header";
 
 export const metadata = {
   title: "OneXReferral - One Referral Can Change Everything",
